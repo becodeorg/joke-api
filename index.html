@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="explain">
+            <h1>Fetch from joke api</h1>
+            <p>You'll have to fetch some data from the <a href="https://github.com/15Dkatz/official_joke_api#endpoints" target="_blank">joke Api</a>. Display 10 random jokes in the table when you load the page. If you go to the documentation you'll see that you can fetch 10 random jokes of the general type or 10 random jokes of the programming type. Fetch 10 of both types and put 5 of each in an array. Display those in the table and sort those 10 jokes in the table based on the first character in the setup string alphabetically. The jokes that have type "programming" should have a black background and white font color.</p>
+            <p>After that when you click on the button after selecting a joke type, add a random joke from that type to the bottom of the table and if it's of the type "programming" make the background black and font color white again.</p>
+        </div>
+        <div class="searchBox">
+            <input type="radio" id="general" name="category" value="general">
+            <label for="general">General</label>
+            <br>
+            <input type="radio" id="programming" name="category" value="programming">
+            <label for="programming">Programming</label>
+            <button id="run">Add joke</button>
+        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>Setup</td>
+                    <td>Punchline</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
