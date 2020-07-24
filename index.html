@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Exam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="explain">
-            <h1>Fetch from joke api</h1>
-            <p>You'll have to fetch some data from the <a href="https://github.com/15Dkatz/official_joke_api#endpoints" target="_blank">joke Api</a>. Display 10 random jokes in the table when you load the page. If you go to the documentation you'll see that you can fetch 10 random jokes of the general type or 10 random jokes of the programming type. Fetch 10 of both types and put 5 of each in an array. Display those in the table and sort those 10 jokes in the table based on the first character in the setup string alphabetically. The jokes that have type "programming" should have a black background and white font color.</p>
-            <p>After that when you click on the button after selecting a joke type, add a random joke from that type to the bottom of the table and if it's of the type "programming" make the background black and font color white again.</p>
+            <h1>Fetch from baby name api</h1>
+            <p>You'll have to fetch some data from the <a href="baby-api.php" target="_blank">baby name Api</a>. Display 5 random boy and 5 random girl baby names in the table when you load the page. Display those in the grid below, and show all the boy names at the left, and all the girls names to the right of the grid. The boy names should be in blue, the girls names should be in pink.</p>
+            <p>After that when you click on the button after selecting a gender, add a random name from that gender to the bottom of the grid. Make sure it is align correctly (boy left, girl right column).</p>
         </div>
         <div class="searchBox">
-            <input type="radio" id="general" name="category" value="general">
-            <label for="general">General</label>
+            <input type="radio" id="girl" name="category" value="girl">
+            <label for="girl">Boy</label>
             <br>
-            <input type="radio" id="programming" name="category" value="programming">
-            <label for="programming">Programming</label>
-            <button id="run">Add joke</button>
+            <input type="radio" id="boy" name="category" value="boy">
+            <label for="boy">Girl</label>
+            <button id="run">Add name</button>
         </div>
-        <table border="1">
-            <thead>
-                <tr>
-                    <td>Setup</td>
-                    <td>Punchline</td>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+
+        <div class="container">
+            <!-- you can remove this example row-->
+            <div class="row">
+                <div class="col-sm">
+                    Example boy name
+                </div>
+                <div class="col-sm">
+                    Example girl name
+                </div>
+            </div>
+            <!-- end example -->
+        </div>
     </div>
 
     <script src="script.js"></script>
